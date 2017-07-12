@@ -56,14 +56,17 @@ void oscillatingObject::update(){
             
             chance = ofRandom(1);
             
-            if(chance > 0.25){
-                p.x++;
-            } else if(chance > 0.5){
-                p.x--;
-            } else if (chance > 0.75){
-                p.y++;
+            speedX =0.25;
+            speedY =0.25;
+            
+            if(chance < 0.25){
+                p.x+=speedX;
+            } else if(chance < 0.5){
+                p.x-=speedX;
+            } else if (chance < 0.75){
+                p.y+=speedY;
             } else {
-                p.y--;
+                p.y-=speedY;
             }
             
             //Change z coordinate of vertex
