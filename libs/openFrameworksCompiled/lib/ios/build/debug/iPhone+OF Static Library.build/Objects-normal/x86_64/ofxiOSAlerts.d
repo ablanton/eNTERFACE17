@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/luis/Documents/GitHub/eNTERFACE17/addons/ofxiOS/src/events/ofxiOSAlerts.mm \
+  ../../../../addons/ofxiOS/src/events/ofxiOSAlerts.h \
+  ../../../../addons/ofxiOS/src/events/ofxiOSAlertsListener.h
