@@ -20,7 +20,7 @@ void oscillatingObject::setup(){
     
     for(int y=0; y<h; y++){
         for(int x=0; x<w; x++){
-            mesh.addVertex(ofPoint((x-w)*10, (y-h)*10, 0));
+            mesh.addVertex(ofPoint((x-w)*12, (y-h)*12, 0));
             mesh.addColor(ofColor(255,255,255));
         }
     }
@@ -55,6 +55,7 @@ void oscillatingObject::update(){
             
             //Change z coordinate of vertex
             p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),20,500);
+            //p.x = value * ofMap(ofGetMouseY(),0,ofGetHeight(),20,500);
             mesh.setVertex(i, p);
             
             // Change color of vertex
@@ -79,8 +80,8 @@ void oscillatingObject::draw(){
     float angle = time;  // compoute angle. we rotate at speed 20 degrees per second
     
     // rotate coordenate system
-    ofRotate(30, 1, 0, 0);
-    ofRotate(angle, 0, 0, 1);
+    //ofRotate(300, 0, 0, 0);
+    //ofRotate(angle, 0, 0, 1);
     
     ofTranslate(ofGetWidth(), ofGetHeight());
     
