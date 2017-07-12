@@ -20,7 +20,7 @@ void oscillatingObject::setup(){
     
     for(int y=0; y<h; y++){
         for(int x=0; x<w; x++){
-            mesh.addVertex(ofPoint((x-w)*10, (y-h)*10, 0));
+            mesh.addVertex(ofPoint((x-w)*25, (y-h)*25, 0));
             mesh.addColor(ofColor(255,255,255));
         }
     }
@@ -72,6 +72,7 @@ void oscillatingObject::update(){
             
             //Change z coordinate of vertex
             p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),0.1,250);
+            //p.y = value * ofMap(ofGetMouseY(),0,ofGetWidth(),0.1,125);
             //p.x = value * ofMap(ofGetMouseY(),0,ofGetHeight(),20,500);
             mesh.setVertex(i, p);
             
@@ -88,7 +89,7 @@ void oscillatingObject::draw(){
     ofBackgroundGradient(centerColor, edgeColor, OF_GRADIENT_CIRCULAR);
     
     ofEnableDepthTest();
-    //    cam.begin();
+    //cam.begin();
     ofPushMatrix(); // store the coordinate system
     
     // Move the coordinate center to screen's center
@@ -108,7 +109,7 @@ void oscillatingObject::draw(){
     //Here ofSetColor() does not affects the result of drawing, because the mesh has its own vertices colors
     
     mesh.drawWireframe();
-    //    cam.end();
+    //cam.end();
     
     ofPopMatrix();
     
