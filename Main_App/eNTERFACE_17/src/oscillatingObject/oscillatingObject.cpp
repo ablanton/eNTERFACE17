@@ -51,10 +51,10 @@ void oscillatingObject::update(){
             ofPoint p = mesh.getVertex(i);
             
             //Get perlin noise value
-            float value = ofNoise(x * 0.05, y * 0.05, time * 0.5);
+            float value = ofNoise(x * 0.05, y * 0.05, time * 1.5);
             
             //Change z coordinate of vertex
-            p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),20,500);
+            p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),0.1,250);
             //p.x = value * ofMap(ofGetMouseY(),0,ofGetHeight(),20,500);
             mesh.setVertex(i, p);
             
