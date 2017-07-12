@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofxiOS.h"
+#include "ofxiOSExternalDisplay.h"
+#include "oscillatingObject.hpp"
 
 class ofApp : public ofxiOSApp{
 	
@@ -20,7 +22,8 @@ class ofApp : public ofxiOSApp{
         void gotFocus();
         void gotMemoryWarning();
         void deviceOrientationChanged(int newOrientation);
-
+    
+    oscillatingObject myOscillatingObject;
 };
 
 

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworks/utils/ofLog.cpp \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworks/utils/ofLog.cpp \
   ../../../../libs/openFrameworks/utils/ofLog.h \
   ../../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../../libs/tess2/include/tesselator.h \
@@ -392,14 +392,14 @@ dependencies: \
   ../../../../libs/boost/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
   ../../../../libs/boost/include/boost/range/const_iterator.hpp \
   ../../../../libs/boost/include/boost/filesystem/convenience.hpp \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofTypes.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
   ../../../../libs/utf8cpp/include/utf8.h \
   ../../../../libs/utf8cpp/include/utf8/checked.h \
   ../../../../libs/utf8cpp/include/utf8/core.h \

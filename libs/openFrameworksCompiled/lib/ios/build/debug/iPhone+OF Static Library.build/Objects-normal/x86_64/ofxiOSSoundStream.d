@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/aNdr3w/Desktop/of_v0.9.8/addons/ofxiOS/src/sound/ofxiOSSoundStream.mm \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/addons/ofxiOS/src/sound/ofxiOSSoundStream.mm \
   ../../../../addons/ofxiOS/src/sound/ofxiOSSoundStream.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/sound/ofBaseSoundStream.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofConstants.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/sound/ofBaseSoundStream.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofConstants.h \
   ../../../../libs/tess2/include/tesselator.h \
   ../../../../addons/ofxiOS/src/sound/ofxiOSSoundStreamDelegate.h \
   ../../../../addons/ofxiOS/src/sound/SoundStream.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/sound/ofSoundStream.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofBaseTypes.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/sound/ofSoundStream.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofBaseTypes.h \
   ../../../../libs/openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
   ../../../../libs/openFrameworks/types/ofRectangle.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofLog.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofLog.h \
   ../../../../libs/openFrameworks/utils/ofFileUtils.h \
   ../../../../libs/boost/include/boost/filesystem.hpp \
   ../../../../libs/boost/include/boost/filesystem/config.hpp \
@@ -406,22 +406,22 @@ dependencies: \
   ../../../../libs/boost/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
   ../../../../libs/boost/include/boost/range/const_iterator.hpp \
   ../../../../libs/boost/include/boost/filesystem/convenience.hpp \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMatrix4x4.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMatrix4x4.h \
   ../../../../libs/openFrameworks/math/ofQuaternion.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofURLFileLoader.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/events/ofEvents.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofURLFileLoader.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/events/ofEvents.h \
   ../../../../libs/openFrameworks/events/ofEventUtils.h \
   ../../../../libs/openFrameworks/events/ofEvent.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofTimer.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofFpsCounter.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/3d/ofMesh.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofTimer.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofFpsCounter.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/3d/ofMesh.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
   ../../../../libs/utf8cpp/include/utf8.h \
   ../../../../libs/utf8cpp/include/utf8/checked.h \
   ../../../../libs/utf8cpp/include/utf8/core.h \
   ../../../../libs/utf8cpp/include/utf8/unchecked.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofGLUtils.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/graphics/ofPixels.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/app/ofBaseApp.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofGLUtils.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/graphics/ofPixels.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/app/ofBaseApp.h \
   ../../../../addons/ofxiOS/src/sound/SoundInputStream.h \
   ../../../../addons/ofxiOS/src/sound/SoundOutputStream.h

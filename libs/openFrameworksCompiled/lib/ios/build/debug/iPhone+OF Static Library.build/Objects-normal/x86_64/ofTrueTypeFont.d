@@ -1,14 +1,14 @@
 dependencies: \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworks/graphics/ofTrueTypeFont.cpp \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworks/graphics/ofTrueTypeFont.cpp \
   ../../../../libs/openFrameworks/graphics/ofTrueTypeFont.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofConstants.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofConstants.h \
   ../../../../libs/tess2/include/tesselator.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofRectangle.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofLog.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofRectangle.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofLog.h \
   ../../../../libs/openFrameworks/utils/ofFileUtils.h \
   ../../../../libs/boost/include/boost/filesystem.hpp \
   ../../../../libs/boost/include/boost/filesystem/config.hpp \
@@ -398,33 +398,33 @@ dependencies: \
   ../../../../libs/boost/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
   ../../../../libs/boost/include/boost/range/const_iterator.hpp \
   ../../../../libs/boost/include/boost/filesystem/convenience.hpp \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofTypes.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
   ../../../../libs/openFrameworks/graphics/ofPath.h \
   ../../../../libs/openFrameworks/graphics/ofPolyline.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofBaseTypes.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMatrix4x4.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofBaseTypes.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMatrix4x4.h \
   ../../../../libs/openFrameworks/math/ofQuaternion.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofURLFileLoader.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/events/ofEvents.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofURLFileLoader.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/events/ofEvents.h \
   ../../../../libs/openFrameworks/events/ofEventUtils.h \
   ../../../../libs/openFrameworks/events/ofEvent.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofTimer.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofFpsCounter.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/3d/ofMesh.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofTimer.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofFpsCounter.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/3d/ofMesh.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
   ../../../../libs/utf8cpp/include/utf8.h \
   ../../../../libs/utf8cpp/include/utf8/checked.h \
   ../../../../libs/utf8cpp/include/utf8/core.h \
   ../../../../libs/utf8cpp/include/utf8/unchecked.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofGLUtils.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/graphics/ofPixels.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofVboMesh.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofGLUtils.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/graphics/ofPixels.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofVboMesh.h \
   ../../../../libs/openFrameworks/gl/ofVbo.h \
   ../../../../libs/openFrameworks/gl/ofBufferObject.h \
   ../../../../libs/openFrameworks/graphics/ofTessellator.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofTexture.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofTexture.h \
   ../../../../libs/freetype/include/freetype2/ft2build.h \
   ../../../../libs/freetype/include/freetype2/config/ftheader.h \
   ../../../../libs/freetype/include/freetype2/freetype.h \
@@ -441,7 +441,7 @@ dependencies: \
   ../../../../libs/freetype/include/freetype2/ftoutln.h \
   ../../../../libs/freetype/include/freetype2/fttrigon.h \
   ../../../../libs/openFrameworks/graphics/ofGraphics.h \
-  /Users/aNdr3w/Desktop/of_v0.9.8/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/app/ofAppRunner.h \
+  /Users/Barreiros/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/app/ofAppRunner.h \
   ../../../../libs/openFrameworks/app/ofWindowSettings.h \
   ../../../../libs/openFrameworks/app/ofMainLoop.h \
   ../../../../libs/openFrameworks/app/ofAppBaseWindow.h \
