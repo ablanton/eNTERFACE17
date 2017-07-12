@@ -28,6 +28,10 @@ public:
     ofImage img;
     
     oscillatingObject();
+    
+    float chance;
+    float angle;
+    float speedX, speedY;
 };
 
 #endif /* oscillatingObject_hpp */

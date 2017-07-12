@@ -4,8 +4,7 @@
 //
 //  Created by Jorge Barreiros on 11/07/17.
 //
-//
-//test it out
+
 #include "oscillatingObject.hpp"
 oscillatingObject::oscillatingObject(){
     
@@ -21,7 +20,7 @@ void oscillatingObject::setup(){
     for(int y=0; y<h; y++){
         for(int x=0; x<w; x++){
             mesh.addVertex(ofPoint((x-w)*10, (y-h)*10, 0));
-            mesh.addColor(ofColor(255,0,0));
+            mesh.addColor(ofColor(255,255,255));
         }
     }
     
@@ -39,6 +38,8 @@ void oscillatingObject::setup(){
     setNormals(mesh);
     light.enable();
     
+    
+    angle = 0;
 }
 
 void oscillatingObject::update(){
@@ -53,6 +54,21 @@ void oscillatingObject::update(){
             //Get perlin noise value
             float value = ofNoise(x * 0.05, y * 0.05, time * 1.5);
             
+            speedX = ofMap(ofGetMouseX(), 0, ofGetWidth(), 0.2, 1.2);
+            speedY = ofMap(ofGetMouseY(), 0, ofGetHeight(), 0.2, 1.2);
+            
+            chance = ofRandom(1);
+            
+            if(chance < 0.25){
+                p.x+=speedX;
+            } else if(chance > 0.25){
+                p.x-=speedX;
+            } else if (chance > 0.25){
+                p.y+=speedY;
+            } else {
+                p.y-=speedY;
+            }
+            
             //Change z coordinate of vertex
             p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),0.1,250);
             //p.x = value * ofMap(ofGetMouseY(),0,ofGetHeight(),20,500);
@@ -62,6 +78,12 @@ void oscillatingObject::update(){
             mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*450+500, value*sin(ofGetElapsedTimef())*200+1050, value*sin(ofGetElapsedTimef())*250+9050));
         }
     }
+    
+    float angle = ofMap(ofGetMouseX(), 0, ofGetWidth(), 0, 180);
+    angle+=10;
+    
+    ofRotateY(angle);
+    
     setNormals(mesh);
 }
 
