@@ -59,14 +59,14 @@ void oscillatingObject::update(){
             mesh.setVertex(i, p);
             
             // Change color of vertex
-            mesh.setColor(i, ofColor(value*255, value, value));
+            mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*150+50, value*sin(ofGetElapsedTimef())*200+50, value*sin(ofGetElapsedTimef())*250+50));
         }
     }
     setNormals(mesh);
 }
 
 void oscillatingObject::draw(){
-    ofBackground(255);
+    ofBackground(0);
     
     ofEnableDepthTest();
     //    cam.begin();
