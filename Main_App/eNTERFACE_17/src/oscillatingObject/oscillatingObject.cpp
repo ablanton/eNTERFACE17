@@ -59,7 +59,7 @@ void oscillatingObject::update(){
             mesh.setVertex(i, p);
             
             // Change color of vertex
-            mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*150+50, value*sin(ofGetElapsedTimef())*200+50, value*sin(ofGetElapsedTimef())*250+50));
+            mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*450+500, value*sin(ofGetElapsedTimef())*200+1050, value*sin(ofGetElapsedTimef())*250+9050));
         }
     }
     setNormals(mesh);
