@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>clang_version</key>
+<string>Apple LLVM version 8.1.0 (clang-802.0.42)</string>
+ <key>files</key>
+ <array>
+  <string>/Users/aNdr3w/Desktop/eNTERFACE17/addons/ofxiOS/src/utils/ofxiOSImagePicker.mm</string>
+ </array>
+ <key>diagnostics</key>
+ <array>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>521</integer>
+      <key>col</key><integer>1</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>&apos;OverlayView&apos; lacks a &apos;dealloc&apos; instance method but must release &apos;delegate&apos;</string>
+     <key>message</key>
+     <string>&apos;OverlayView&apos; lacks a &apos;dealloc&apos; instance method but must release &apos;delegate&apos;</string>
+    </dict>
+   </array>
+   <key>description</key><string>&apos;OverlayView&apos; lacks a &apos;dealloc&apos; instance method but must release &apos;delegate&apos;</string>
+   <key>category</key><string>Core Foundation/Objective-C</string>
+   <key>type</key><string>Missing -dealloc</string>
+   <key>check_name</key><string>osx.cocoa.Dealloc</string>
+   <!-- This hash is experimental and going to change! -->
+   <key>issue_hash_content_of_line_in_context</key><string>f84c08911b49768b37286c89861eb7c9</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>521</integer>
+   <key>col</key><integer>1</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>control</string>
+     <key>edges</key>
+      <array>
+       <dict>
+        <key>start</key>
+         <array>
+          <dict>
+           <key>line</key><integer>539</integer>
+           <key>col</key><integer>5</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>539</integer>
+           <key>col</key><integer>8</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+        <key>end</key>
+         <array>
+          <dict>
+           <key>line</key><integer>550</integer>
+           <key>col</key><integer>5</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+          <dict>
+           <key>line</key><integer>550</integer>
+           <key>col</key><integer>5</integer>
+           <key>file</key><integer>0</integer>
+          </dict>
+         </array>
+       </dict>
+      </array>
+    </dict>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>550</integer>
+      <key>col</key><integer>22</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>550</integer>
+         <key>col</key><integer>22</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>550</integer>
+         <key>col</key><integer>28</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+       <array>
+        <dict>
+         <key>line</key><integer>550</integer>
+         <key>col</key><integer>22</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>550</integer>
+         <key>col</key><integer>28</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Non-localized string literal here</string>
+     <key>message</key>
+     <string>Non-localized string literal here</string>
+    </dict>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>550</integer>
+      <key>col</key><integer>5</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>550</integer>
+         <key>col</key><integer>22</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>550</integer>
+         <key>col</key><integer>28</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>User-facing text should use localized string macro</string>
+     <key>message</key>
+     <string>User-facing text should use localized string macro</string>
+    </dict>
+   </array>
+   <key>description</key><string>User-facing text should use localized string macro</string>
+   <key>category</key><string>Localizability Issue (Apple)</string>
+   <key>type</key><string>Unlocalizable string</string>
+   <key>check_name</key><string></string>
+   <!-- This hash is experimental and going to change! -->
+   <key>issue_hash_content_of_line_in_context</key><string>9e86d3329d71ded39040747a9ce2dc94</string>
+  <key>issue_context_kind</key><string>Objective-C method</string>
+  <key>issue_context</key><string>initUI</string>
+  <key>issue_hash_function_offset</key><string>13</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>550</integer>
+   <key>col</key><integer>5</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+ </array>
+</dict>
+</plist>
