@@ -5,7 +5,7 @@
 //  Created by Jorge Barreiros on 11/07/17.
 //
 //
-//gdfg dfg d
+//test it out
 #include "oscillatingObject.hpp"
 oscillatingObject::oscillatingObject(){
     
