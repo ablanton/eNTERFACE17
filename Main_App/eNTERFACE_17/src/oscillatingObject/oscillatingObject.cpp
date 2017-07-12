@@ -54,19 +54,16 @@ void oscillatingObject::update(){
             //Get perlin noise value
             float value = ofNoise(x * 0.05, y * 0.05, time * 1.5);
             
-            speedX = ofMap(ofGetMouseX(), 0, ofGetWidth(), 0.2, 1.2);
-            speedY = ofMap(ofGetMouseY(), 0, ofGetHeight(), 0.2, 1.2);
-            
             chance = ofRandom(1);
             
-            if(chance < 0.25){
-                p.x+=speedX;
-            } else if(chance > 0.25){
-                p.x-=speedX;
-            } else if (chance > 0.25){
-                p.y+=speedY;
+            if(chance > 0.25){
+                p.x++;
+            } else if(chance > 0.5){
+                p.x--;
+            } else if (chance > 0.75){
+                p.y++;
             } else {
-                p.y-=speedY;
+                p.y--;
             }
             
             //Change z coordinate of vertex
@@ -78,17 +75,13 @@ void oscillatingObject::update(){
             mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*450+500, value*sin(ofGetElapsedTimef())*200+1050, value*sin(ofGetElapsedTimef())*250+9050));
         }
     }
-    
-    float angle = ofMap(ofGetMouseX(), 0, ofGetWidth(), 0, 180);
-    angle+=10;
-    
-    ofRotateY(angle);
-    
     setNormals(mesh);
 }
 
 void oscillatingObject::draw(){
-    ofBackground(0);
+    ofColor centerColor = ofColor(255, 255, 255);
+    ofColor edgeColor(0,0,0);
+    ofBackgroundGradient(centerColor, edgeColor, OF_GRADIENT_CIRCULAR);
     
     ofEnableDepthTest();
     //    cam.begin();
