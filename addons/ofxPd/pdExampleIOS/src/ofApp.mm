@@ -28,7 +28,7 @@ void ofApp::setup() {
     
     ofSetLogLevel(OF_LOG_VERBOSE);
     
-    //-- create buttons. hi
+    //-- create buttons.
     int buttonW = 140;
     int buttonH = 76;
     buttonExternalDisplayRect.width = buttonW;
@@ -295,14 +295,14 @@ void ofApp::update() {
 void ofApp::draw() {
 
 	// draw scope
-//	ofSetColor(0, 255, 0);
-//	ofSetRectMode(OF_RECTMODE_CENTER);
-//	float x = 0, y = ofGetHeight()/2;
-//	float w = ofGetWidth() / (float) scopeArray.size(), h = ofGetHeight()/2;
-//	for(int i = 0; i < scopeArray.size()-1; ++i) {
-//		ofDrawLine(x, y+scopeArray[i]*h, x+w, y+scopeArray[i+1]*h);
-//		x += w;
-//	}
+	ofSetColor(0, 255, 0);
+	ofSetRectMode(OF_RECTMODE_CENTER);
+	float x = 0, y = ofGetHeight()/2;
+	float w = ofGetWidth() / (float) scopeArray.size(), h = ofGetHeight()/2;
+	for(int i = 0; i < scopeArray.size()-1; ++i) {
+		ofDrawLine(x, y+scopeArray[i]*h, x+w, y+scopeArray[i+1]*h);
+		x += w;
+	}
 }
 
 //--------------------------------------------------------------
