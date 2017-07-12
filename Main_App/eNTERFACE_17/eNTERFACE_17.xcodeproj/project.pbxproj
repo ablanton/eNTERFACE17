@@ -88,6 +88,7 @@
 		B83C886BDB6C3CB5FF0E699F /* fiddle~.c in Sources */ = {isa = PBXBuildFile; fileRef = 12A8DA40DAEF46D244DFC368 /* fiddle~.c */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
+		BB340ED41F163DDA00FBAEB4 /* oscillatingObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB340ED21F163DDA00FBAEB4 /* oscillatingObject.cpp */; };
 		BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */; };
 		BC558D2017EB1F9E1B50131C /* g_toggle.c in Sources */ = {isa = PBXBuildFile; fileRef = 715F8AB1C51B0B3DE7C3C2F5 /* g_toggle.c */; };
 		BCC0A12D50D2282CBC7DFED1 /* x_connective.c in Sources */ = {isa = PBXBuildFile; fileRef = B140EC444EE8166F13B50025 /* x_connective.c */; };
@@ -234,6 +235,8 @@
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB24DDC910DA781C00E9C588 /* ofxiOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiOS-Info.plist"; sourceTree = "<group>"; };
+		BB340ED21F163DDA00FBAEB4 /* oscillatingObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oscillatingObject.cpp; path = oscillatingObject/oscillatingObject.cpp; sourceTree = "<group>"; };
+		BB340ED31F163DDA00FBAEB4 /* oscillatingObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = oscillatingObject.hpp; path = oscillatingObject/oscillatingObject.hpp; sourceTree = "<group>"; };
 		BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BD0CEB29A48D083C2F4A3C59 /* z_queued.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = z_queued.c; path = ../../addons/ofxPd/libs/libpd/libpd_wrapper/util/z_queued.c; sourceTree = SOURCE_ROOT; };
 		BD919E02E732CB6E28D00F10 /* g_text.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = g_text.c; path = "../../addons/ofxPd/libs/libpd/pure-data/src/g_text.c"; sourceTree = SOURCE_ROOT; };
@@ -540,6 +543,15 @@
 			name = openFrameworks;
 			sourceTree = "<group>";
 		};
+		BB340ED51F163DDE00FBAEB4 /* oscillatingObject */ = {
+			isa = PBXGroup;
+			children = (
+				BB340ED21F163DDA00FBAEB4 /* oscillatingObject.cpp */,
+				BB340ED31F163DDA00FBAEB4 /* oscillatingObject.hpp */,
+			);
+			name = oscillatingObject;
+			sourceTree = "<group>";
+		};
 		BBE5E94E0F497BD800F28951 /* core */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +693,7 @@
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* ofApp.mm */,
 				E4D8936C11527B74007E1F53 /* ofApp.h */,
+				BB340ED51F163DDE00FBAEB4 /* oscillatingObject */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -845,6 +858,7 @@
 				3F8B27492925F33D406DDF1B /* g_readwrite.c in Sources */,
 				FE2751B92025E9F544210503 /* g_rtext.c in Sources */,
 				0ED040208D487F62D0D1D7C3 /* g_scalar.c in Sources */,
+				BB340ED41F163DDA00FBAEB4 /* oscillatingObject.cpp in Sources */,
 				97EC5D08DBD590EAEA77A883 /* g_template.c in Sources */,
 				52655A818C090B25BA2EFBDB /* g_text.c in Sources */,
 				BC558D2017EB1F9E1B50131C /* g_toggle.c in Sources */,
