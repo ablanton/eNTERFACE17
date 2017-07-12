@@ -12,7 +12,7 @@ oscillatingObject::oscillatingObject(){
 }
 
 void oscillatingObject::setup(){
-    img.load("tex.jpg");
+    //§img.load("tex.jpg");
     
     //Grid Size
     w = 75;
@@ -21,7 +21,7 @@ void oscillatingObject::setup(){
     for(int y=0; y<h; y++){
         for(int x=0; x<w; x++){
             mesh.addVertex(ofPoint((x-w)*10, (y-h)*10, 0));
-            mesh.addColor(ofColor(255,255,255));
+            mesh.addColor(ofColor(255,0,0));
         }
     }
     
@@ -59,14 +59,14 @@ void oscillatingObject::update(){
             mesh.setVertex(i, p);
             
             // Change color of vertex
-            mesh.setColor(i, ofColor(value*255, value*255, value*255));
+            mesh.setColor(i, ofColor(value*255, value, value));
         }
     }
     setNormals(mesh);
 }
 
 void oscillatingObject::draw(){
-    ofBackground(0);
+    ofBackground(255);
     
     ofEnableDepthTest();
     //    cam.begin();
