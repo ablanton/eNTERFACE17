@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworks/utils/ofXml.cpp \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworks/utils/ofXml.cpp \
   ../../../../libs/openFrameworks/utils/ofXml.h \
   ../../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../../libs/tess2/include/tesselator.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofParameter.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/events/ofEvents.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofParameter.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/events/ofEvents.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
   ../../../../libs/openFrameworks/events/ofEventUtils.h \
   ../../../../libs/openFrameworks/events/ofEvent.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofTimer.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofFpsCounter.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofTimer.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofFpsCounter.h \
   ../../../../libs/openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
   ../../../../libs/utf8cpp/include/utf8.h \
   ../../../../libs/utf8cpp/include/utf8/checked.h \
   ../../../../libs/utf8cpp/include/utf8/core.h \
@@ -411,17 +411,17 @@ dependencies: \
   ../../../../libs/boost/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
   ../../../../libs/boost/include/boost/range/const_iterator.hpp \
   ../../../../libs/boost/include/boost/filesystem/convenience.hpp \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVectorMath.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVectorMath.h \
   ../../../../libs/openFrameworks/math/ofMatrix3x3.h \
   ../../../../libs/openFrameworks/math/ofMatrix4x4.h \
   ../../../../libs/openFrameworks/math/ofQuaternion.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofParameterGroup.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofBaseTypes.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofParameterGroup.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofBaseTypes.h \
   ../../../../libs/openFrameworks/types/ofRectangle.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofURLFileLoader.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/3d/ofMesh.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofGLUtils.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/graphics/ofPixels.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofURLFileLoader.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/3d/ofMesh.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/gl/ofGLUtils.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/graphics/ofPixels.h \
   ../../../../libs/poco/include/Poco/DOM/Document.h \
   ../../../../libs/poco/include/Poco/XML/XML.h \
   ../../../../libs/poco/include/Poco/Foundation.h \

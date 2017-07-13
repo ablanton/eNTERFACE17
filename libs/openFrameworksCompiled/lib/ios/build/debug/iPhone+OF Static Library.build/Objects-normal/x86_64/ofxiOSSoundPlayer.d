@@ -1,10 +1,10 @@
 dependencies: \
-  /Users/luis/Documents/GitHub/eNTERFACE17/addons/ofxiOS/src/sound/ofxiOSSoundPlayer.mm \
+  /Users/aNdr3w/Desktop/eNTERFACE17/addons/ofxiOS/src/sound/ofxiOSSoundPlayer.mm \
   ../../../../addons/ofxiOS/src/sound/ofxiOSSoundPlayer.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/sound/ofBaseSoundPlayer.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofConstants.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/sound/ofBaseSoundPlayer.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofConstants.h \
   ../../../../libs/tess2/include/tesselator.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/utils/ofUtils.h \
   ../../../../libs/utf8cpp/include/utf8.h \
   ../../../../libs/utf8cpp/include/utf8/checked.h \
   ../../../../libs/utf8cpp/include/utf8/core.h \
@@ -399,11 +399,11 @@ dependencies: \
   ../../../../libs/boost/include/boost/range/detail/msvc_has_iterator_workaround.hpp \
   ../../../../libs/boost/include/boost/range/const_iterator.hpp \
   ../../../../libs/boost/include/boost/filesystem/convenience.hpp \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofTypes.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofTypes.h \
   ../../../../libs/openFrameworks/types/ofColor.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
-  /Users/luis/Documents/GitHub/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofMath.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/types/ofPoint.h \
+  /Users/aNdr3w/Desktop/eNTERFACE17/libs/openFrameworksCompiled/project/ios/../../../openFrameworks/math/ofVec3f.h \
   ../../../../libs/openFrameworks/math/ofVec2f.h \
   ../../../../libs/openFrameworks/math/ofVec4f.h \
   ../../../../addons/ofxiOS/src/sound/AVSoundPlayer.h
