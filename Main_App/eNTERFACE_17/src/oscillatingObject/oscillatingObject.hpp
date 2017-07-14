@@ -22,6 +22,8 @@ public:
     
     int w,h;
     
+    float r, g, b, a, time;
+    
     ofEasyCam cam;
     ofVboMesh mesh;
     ofLight light;

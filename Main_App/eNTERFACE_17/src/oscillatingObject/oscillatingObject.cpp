@@ -53,7 +53,7 @@ void oscillatingObject::update(){
             ofPoint p = mesh.getVertex(i);
             
             //Get perlin noise value
-            float value = ofNoise(x * 0.05, y * 0.05, time * 1.5);
+            float value = ofNoise(x * 0.55, y * 0.35, time * 0.75);
             
             chance = ofRandom(1);
             
@@ -71,13 +71,20 @@ void oscillatingObject::update(){
             }
             
             //Change z coordinate of vertex
-            p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),0.1,250);
+            p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),20,350);
             //p.y = value * ofMap(ofGetMouseY(),0,ofGetWidth(),0.1,125);
             //p.x = value * ofMap(ofGetMouseY(),0,ofGetHeight(),20,500);
             mesh.setVertex(i, p);
             
+            
+            r = value*sin(ofGetElapsedTimef())*27.5+227.5;
+            g = value*sin(ofGetElapsedTimef())*25+175;
+            b = value*sin(ofGetElapsedTimef())*77.5+177.5;
+            a = 255;
+            
             // Change color of vertex
-            mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*450+500, value*sin(ofGetElapsedTimef())*200+1050, value*sin(ofGetElapsedTimef())*250+9050));
+            mesh.setColor(i, ofColor(r, g, b, a));
+
         }
     }
     setNormals(mesh);
@@ -119,8 +126,8 @@ void oscillatingObject::draw(){
     float transX = ofMap(ofGetMouseX(),0,ofGetWidth(),-100,100);
     float transY = ofMap(ofGetMouseY(),0,ofGetHeight(),-100,100);
     
-    cout<< "transX: " << transX << endl;
-    cout<< "transY: " << transY << endl;
+    //cout<< "transX: " << transX << endl;
+    //cout<< "transY: " << transY << endl;
     
     //mesh.drawWireframe();
     ofPopMatrix();

@@ -89,6 +89,7 @@
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
 		BB340ED41F163DDA00FBAEB4 /* oscillatingObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB340ED21F163DDA00FBAEB4 /* oscillatingObject.cpp */; };
+		BBB4574D1F18CC0600BEF31D /* twistingKnot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BBB4574B1F18CC0600BEF31D /* twistingKnot.cpp */; };
 		BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */; };
 		BC558D2017EB1F9E1B50131C /* g_toggle.c in Sources */ = {isa = PBXBuildFile; fileRef = 715F8AB1C51B0B3DE7C3C2F5 /* g_toggle.c */; };
 		BCC0A12D50D2282CBC7DFED1 /* x_connective.c in Sources */ = {isa = PBXBuildFile; fileRef = B140EC444EE8166F13B50025 /* x_connective.c */; };
@@ -103,6 +104,10 @@
 		D380A4C440ED66340207F2C0 /* x_vexp.c in Sources */ = {isa = PBXBuildFile; fileRef = 456BA7000561553F63452074 /* x_vexp.c */; };
 		D4B15D63B3F554E900CF7560 /* d_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = C3303C19ADAADDFC1C7CC820 /* d_filter.c */; };
 		D58EA3A4D050B287AC2A3553 /* g_hslider.c in Sources */ = {isa = PBXBuildFile; fileRef = D6279FA927A5C76F28B5C348 /* g_hslider.c */; };
+		D8B363441F17D04600033E0B /* AlertViewDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8B3633F1F17D04600033E0B /* AlertViewDelegate.mm */; };
+		D8B363451F17D04600033E0B /* MyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8B363411F17D04600033E0B /* MyViewController.mm */; };
+		D8B363461F17D04600033E0B /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B363421F17D04600033E0B /* MyViewController.xib */; };
+		D8B363471F17D04600033E0B /* MyViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B363431F17D04600033E0B /* MyViewController~ipad.xib */; };
 		D9472FB3B2333CA297B29259 /* m_binbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 8210B5DA159B9049C87DBCBA /* m_binbuf.c */; };
 		DC48CA157968410ABCBBE491 /* m_sched.c in Sources */ = {isa = PBXBuildFile; fileRef = 159BD5352D54D696461A590A /* m_sched.c */; };
 		E33F4BBE4F8A56A9FB180441 /* x_arithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = 32E3AC8EFFD907DEA1990A63 /* x_arithmetic.c */; };
@@ -237,6 +242,8 @@
 		BB24DDC910DA781C00E9C588 /* ofxiOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiOS-Info.plist"; sourceTree = "<group>"; };
 		BB340ED21F163DDA00FBAEB4 /* oscillatingObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oscillatingObject.cpp; path = oscillatingObject/oscillatingObject.cpp; sourceTree = "<group>"; };
 		BB340ED31F163DDA00FBAEB4 /* oscillatingObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = oscillatingObject.hpp; path = oscillatingObject/oscillatingObject.hpp; sourceTree = "<group>"; };
+		BBB4574B1F18CC0600BEF31D /* twistingKnot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twistingKnot.cpp; path = twistingKnot/twistingKnot.cpp; sourceTree = "<group>"; };
+		BBB4574C1F18CC0600BEF31D /* twistingKnot.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = twistingKnot.hpp; path = twistingKnot/twistingKnot.hpp; sourceTree = "<group>"; };
 		BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BD0CEB29A48D083C2F4A3C59 /* z_queued.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = z_queued.c; path = ../../addons/ofxPd/libs/libpd/libpd_wrapper/util/z_queued.c; sourceTree = SOURCE_ROOT; };
 		BD919E02E732CB6E28D00F10 /* g_text.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = g_text.c; path = "../../addons/ofxPd/libs/libpd/pure-data/src/g_text.c"; sourceTree = SOURCE_ROOT; };
@@ -256,6 +263,12 @@
 		D71DFBB5BDC937371370EF4A /* x_vexp_if.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = x_vexp_if.c; path = "../../addons/ofxPd/libs/libpd/pure-data/src/x_vexp_if.c"; sourceTree = SOURCE_ROOT; };
 		D765A6EB64D426A2069D3CBB /* g_canvas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = g_canvas.h; path = "../../addons/ofxPd/libs/libpd/pure-data/src/g_canvas.h"; sourceTree = SOURCE_ROOT; };
 		D7A9E21A5E51DFDD724DCE23 /* x_array.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = x_array.c; path = "../../addons/ofxPd/libs/libpd/pure-data/src/x_array.c"; sourceTree = SOURCE_ROOT; };
+		D8B3633E1F17D04600033E0B /* AlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewDelegate.h; sourceTree = "<group>"; };
+		D8B3633F1F17D04600033E0B /* AlertViewDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AlertViewDelegate.mm; sourceTree = "<group>"; };
+		D8B363401F17D04600033E0B /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		D8B363411F17D04600033E0B /* MyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyViewController.mm; sourceTree = "<group>"; };
+		D8B363421F17D04600033E0B /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		D8B363431F17D04600033E0B /* MyViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MyViewController~ipad.xib"; sourceTree = "<group>"; };
 		D9DFF403626D7DEF9B507E5C /* x_acoustics.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = x_acoustics.c; path = "../../addons/ofxPd/libs/libpd/pure-data/src/x_acoustics.c"; sourceTree = SOURCE_ROOT; };
 		DAAC950D5248F1B923F74145 /* ringbuffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = ringbuffer.c; path = ../../addons/ofxPd/libs/libpd/libpd_wrapper/util/ringbuffer.c; sourceTree = SOURCE_ROOT; };
 		DD1E2E979FFA3C2454A42520 /* z_hooks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = z_hooks.c; path = ../../addons/ofxPd/libs/libpd/libpd_wrapper/z_hooks.c; sourceTree = SOURCE_ROOT; };
@@ -552,6 +565,15 @@
 			name = oscillatingObject;
 			sourceTree = "<group>";
 		};
+		BBB4574E1F18CC0A00BEF31D /* twistingKnot */ = {
+			isa = PBXGroup;
+			children = (
+				BBB4574B1F18CC0600BEF31D /* twistingKnot.cpp */,
+				BBB4574C1F18CC0600BEF31D /* twistingKnot.hpp */,
+			);
+			name = twistingKnot;
+			sourceTree = "<group>";
+		};
 		BBE5E94E0F497BD800F28951 /* core */ = {
 			isa = PBXGroup;
 			children = (
@@ -679,6 +701,19 @@
 			name = "bob~";
 			sourceTree = "<group>";
 		};
+		D8B3633D1F17D04600033E0B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D8B3633E1F17D04600033E0B /* AlertViewDelegate.h */,
+				D8B3633F1F17D04600033E0B /* AlertViewDelegate.mm */,
+				D8B363401F17D04600033E0B /* MyViewController.h */,
+				D8B363411F17D04600033E0B /* MyViewController.mm */,
+				D8B363421F17D04600033E0B /* MyViewController.xib */,
+				D8B363431F17D04600033E0B /* MyViewController~ipad.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		E41D40FE13B3A0D800A75A5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -693,6 +728,8 @@
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* ofApp.mm */,
 				E4D8936C11527B74007E1F53 /* ofApp.h */,
+				BBB4574E1F18CC0A00BEF31D /* twistingKnot */,
+				D8B3633D1F17D04600033E0B /* UI */,
 				BB340ED51F163DDE00FBAEB4 /* oscillatingObject */,
 			);
 			path = src;
@@ -729,7 +766,7 @@
 				LastUpgradeCheck = 0830;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 2XPTHA68CP;
+						DevelopmentTeam = 3R2A4S39EB;
 					};
 				};
 			};
@@ -775,7 +812,9 @@
 			files = (
 				678E130817951530005B6D19 /* Icon@2x.png in Resources */,
 				678E130A17951536005B6D19 /* Icon.png in Resources */,
+				D8B363461F17D04600033E0B /* MyViewController.xib in Resources */,
 				678E130C1795153C005B6D19 /* Default.png in Resources */,
+				D8B363471F17D04600033E0B /* MyViewController~ipad.xib in Resources */,
 				678E130E17951540005B6D19 /* Default@2x.png in Resources */,
 				678E131017951549005B6D19 /* Default-568h@2x~iphone.png in Resources */,
 			);
@@ -808,6 +847,7 @@
 				E4D8936F11527B74007E1F53 /* ofApp.mm in Sources */,
 				7E30109E413D2851843E76CD /* ofxPd.cpp in Sources */,
 				D3405E38B912C29E1309B062 /* PdBase.cpp in Sources */,
+				BBB4574D1F18CC0600BEF31D /* twistingKnot.cpp in Sources */,
 				A367CDB9C04E4D06B6B19BA3 /* PdTypes.cpp in Sources */,
 				54C9577EB63375F20CF633F2 /* s_libpdmidi.c in Sources */,
 				16649D89FF3403324EEC0975 /* ringbuffer.c in Sources */,
@@ -834,6 +874,7 @@
 				07DF62BFDE83CA3A7EADD287 /* d_delay.c in Sources */,
 				2898D00C4343D0972609E002 /* d_fft.c in Sources */,
 				ACAFE8CEE5112061D702E002 /* d_fft_fftsg.c in Sources */,
+				D8B363451F17D04600033E0B /* MyViewController.mm in Sources */,
 				D4B15D63B3F554E900CF7560 /* d_filter.c in Sources */,
 				00F7846370B57D7466E7DCEE /* d_global.c in Sources */,
 				8ADF9BE8ED04ECBE9B5E0BED /* d_math.c in Sources */,
@@ -882,6 +923,7 @@
 				AC81FEF72D7D45371409A796 /* s_loader.c in Sources */,
 				577286F20066F94A272948C7 /* s_main.c in Sources */,
 				52A6280D5F704C0F9A8DD170 /* s_path.c in Sources */,
+				D8B363441F17D04600033E0B /* AlertViewDelegate.mm in Sources */,
 				EC00ECCEA2C540188AA8BF62 /* s_print.c in Sources */,
 				2F1C6DB6307AAF72C4312399 /* s_utf8.c in Sources */,
 				3229A82668B2B2FF352614AA /* x_acoustics.c in Sources */,
@@ -917,11 +959,34 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEVELOPMENT_TEAM = 2XPTHA68CP;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = 3R2A4S39EB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../addons/ofxPd/libs,
+					../../addons/ofxPd/libs/libpd,
+					../../addons/ofxPd/libs/libpd/cpp,
+					../../addons/ofxPd/libs/libpd/libpd_wrapper,
+					../../addons/ofxPd/libs/libpd/libpd_wrapper/util,
+					"../../addons/ofxPd/libs/libpd/pure-data",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/bob~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/bonk~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/choice",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/fiddle~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/loop~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/lrshift~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/pd~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/pique",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/sigmund~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/stdout",
+					"../../addons/ofxPd/libs/libpd/pure-data/src",
+					../../addons/ofxPd/src,
+					../../addons/ofxAssimpModelLoader,
+				);
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:identifier}";
@@ -934,10 +999,34 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 2XPTHA68CP;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = 3R2A4S39EB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../addons/ofxPd/libs,
+					../../addons/ofxPd/libs/libpd,
+					../../addons/ofxPd/libs/libpd/cpp,
+					../../addons/ofxPd/libs/libpd/libpd_wrapper,
+					../../addons/ofxPd/libs/libpd/libpd_wrapper/util,
+					"../../addons/ofxPd/libs/libpd/pure-data",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/bob~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/bonk~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/choice",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/fiddle~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/loop~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/lrshift~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/pd~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/pique",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/sigmund~",
+					"../../addons/ofxPd/libs/libpd/pure-data/extra/stdout",
+					"../../addons/ofxPd/libs/libpd/pure-data/src",
+					../../addons/ofxPd/src,
+					../../addons/ofxAssimpModelLoader,
+				);
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:identifier}";
@@ -1044,6 +1133,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
