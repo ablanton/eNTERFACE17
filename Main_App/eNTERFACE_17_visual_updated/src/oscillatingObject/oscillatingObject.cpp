@@ -12,11 +12,12 @@ oscillatingObject::oscillatingObject(){
 }
 
 void oscillatingObject::setup(){
-    //§img.load("tex.jpg");
     
     //Grid Size
     w = 75;
     h = 150;
+    
+    rotate = 0;
     
     for(int y=0; y<h; y++){
         for(int x=0; x<w; x++){
@@ -38,8 +39,6 @@ void oscillatingObject::setup(){
     }
     setNormals(mesh);
     light.enable();
-    
-    
     angle = 0;
 }
 
@@ -50,37 +49,46 @@ void oscillatingObject::update(){
     for(int y=0; y<h; y++){
         for(int x=0; x<w; x++){
             int i = x + w * y; // formula para o index do vertice
-            ofPoint p = mesh.getVertex(i);
+            p = mesh.getVertex(i);
             
             //Get perlin noise value
-            float value = ofNoise(x * 0.05, y * 0.05, time * 1.5);
-            
-            chance = ofRandom(1);
-            
-            speedX =0.25;
-            speedY =0.25;
-            
-            if(chance < 0.25){
-                p.x+=speedX;
-            } else if(chance < 0.5){
-                p.x-=speedX;
-            } else if (chance < 0.75){
-                p.y+=speedY;
-            } else {
-                p.y-=speedY;
-            }
+            float value = ofNoise(x * sin(ofGetElapsedTimef()) * 10.55, y * sin(ofGetElapsedTimef()) * 0.35, time * 0.75);
             
             //Change z coordinate of vertex
-            p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),0.1,250);
+            p.z = value * ofMap(ofGetMouseX(),0,ofGetWidth(),20,350);
             //p.y = value * ofMap(ofGetMouseY(),0,ofGetWidth(),0.1,125);
             //p.x = value * ofMap(ofGetMouseY(),0,ofGetHeight(),20,500);
             mesh.setVertex(i, p);
             
+            
+            r = value*sin(ofGetElapsedTimef())*27.5+227.5;
+            g = value*sin(ofGetElapsedTimef())*25+175;
+            b = value*sin(ofGetElapsedTimef())*77.5+177.5;
+            a = 255;
+
             // Change color of vertex
-            mesh.setColor(i, ofColor(value*sin(ofGetElapsedTimef())*450+500, value*sin(ofGetElapsedTimef())*200+1050, value*sin(ofGetElapsedTimef())*250+9050));
+            mesh.setColor(i, ofColor(r, g, b, a));
         }
     }
     setNormals(mesh);
+}
+
+void oscillatingObject::randomWalkingVertex(){
+    chance = ofRandom(1);
+    
+    speedX =20.25;
+    speedY =20.25;
+    
+    if(chance < 0.25){
+        p.x+=speedX;
+    } else if(chance < 0.5){
+        p.x-=speedX;
+    } else if (chance < 0.75){
+        p.y+=speedY;
+    } else {
+        p.y-=speedY;
+    }
+
 }
 
 void oscillatingObject::draw(){
@@ -89,40 +97,17 @@ void oscillatingObject::draw(){
     ofBackgroundGradient(centerColor, edgeColor, OF_GRADIENT_CIRCULAR);
     
     ofEnableDepthTest();
-    //cam.begin();
+    
     ofPushMatrix(); // store the coordinate system
     
-    // Move the coordinate center to screen's center
-    //ofTranslate(ofGetWidth()*0.5, ofGetHeight()*0.5, 0);
-    
-    // Calculate the rotation angle
-    float time = ofGetElapsedTimef();
-    float angle = time;  // compoute angle. we rotate at speed 20 degrees per second
-    
-    // rotate coordenate system
-    //ofRotate(300, 0, 0, 0);
-    //ofRotate(angle, 0, 0, 1);
-    
+    // Move the coordinate center
     ofTranslate(ofGetWidth(), ofGetHeight());
     
-    //Draw mesh
-    //Here ofSetColor() does not affects the result of drawing, because the mesh has its own vertices colors
+    mesh.setMode(OF_PRIMITIVE_LINE_STRIP);
+    setNormals(mesh);
     
-    mesh.drawWireframe();
-    //cam.end();
+    mesh.draw();
     
-    ofPopMatrix();
-    
-    ofPushMatrix();
-    
-    //ofRotateX(90);
-    float transX = ofMap(ofGetMouseX(),0,ofGetWidth(),-100,100);
-    float transY = ofMap(ofGetMouseY(),0,ofGetHeight(),-100,100);
-    
-    cout<< "transX: " << transX << endl;
-    cout<< "transY: " << transY << endl;
-    
-    //mesh.drawWireframe();
     ofPopMatrix();
 }
 
