@@ -105,6 +105,172 @@ void ofApp::setup() {
 	// audio processing on
 	pd.start();
 
+	// -----------------------------------------------------
+	cout << endl << "BEGIN Patch Test" << endl;
+
+	// open patch
+	Patch patch = pd.openPatch("pd/test.pd");
+	cout << patch << endl;
+
+	// close patch
+	pd.closePatch(patch);
+	cout << patch << endl;
+
+	// open patch again
+	patch = pd.openPatch(patch);
+	cout << patch << endl;
+
+	cout << "FINISH Patch Test" << endl;
+
+	// -----------------------------------------------------
+	cout << endl << "BEGIN Message Test" << endl;
+
+	// test basic atoms
+	pd.sendBang("fromOF");
+	pd.sendFloat("fromOF", 100);
+	pd.sendSymbol("fromOF", "test string");
+
+	// stream interface
+	pd << Bang("fromOF")
+	   << Float("fromOF", 100)
+	   << Symbol("fromOF", "test string");
+
+	// send a list
+	pd.startMessage();
+	pd.addFloat(1.23);
+	pd.addSymbol("a symbol");
+	pd.finishList("fromOF");
+
+	// send a message to the $0 receiver ie $0-fromOF
+	pd.startMessage();
+	pd.addFloat(1.23);
+	pd.addSymbol("a symbol");
+	pd.finishList(patch.dollarZeroStr()+"-fromOF");
+
+	// send a list using the List object
+	List testList;
+	testList.addFloat(1.23);
+	testList.addSymbol("sent from a List object");
+	pd.sendList("fromOF", testList);
+	pd.sendMessage("fromOF", "msg", testList);
+
+	// stream interface for list
+	pd << StartMessage() << 1.23 << "sent from a streamed list" << FinishList("fromOF");
+
+	cout << "FINISH Message Test" << endl;
+
+	// -----------------------------------------------------
+	cout << endl << "BEGIN MIDI Test" << endl;
+
+	// send functions
+	pd.sendNoteOn(midiChan, 60);
+	pd.sendControlChange(midiChan, 0, 64);
+	pd.sendProgramChange(midiChan, 100);    // note: pgm num range is 1 - 128
+	pd.sendPitchBend(midiChan, 2000);   // note: ofxPd uses -8192 - 8192 while [bendin] returns 0 - 16383,
+										// so sending a val of 2000 gives 10192 in pd
+	pd.sendAftertouch(midiChan, 100);
+	pd.sendPolyAftertouch(midiChan, 64, 100);
+	pd.sendMidiByte(0, 239);    // note: pd adds +2 to the port number from [midiin], [sysexin], & [realtimein]
+	pd.sendSysex(0, 239);       // so sending to port 0 gives port 2 in pd
+	pd.sendSysRealTime(0, 239);
+
+	// stream
+	pd << NoteOn(midiChan, 60) << ControlChange(midiChan, 100, 64)
+	   << ProgramChange(midiChan, 100) << PitchBend(midiChan, 2000)
+	   << Aftertouch(midiChan, 100) << PolyAftertouch(midiChan, 64, 100)
+	   << StartMidi(0) << 239 << Finish()
+	   << StartSysex(0) << 239 << Finish()
+	   << StartSysRealTime(0) << 239 << Finish();
+
+	cout << "FINISH MIDI Test" << endl;
+
+	// -----------------------------------------------------
+	cout << endl << "BEGIN Array Test" << endl;
+
+	// array check length
+	cout << "array1 len: " << pd.arraySize("array1") << endl;
+
+	// read array
+	std::vector<float> array1;
+	pd.readArray("array1", array1);	// sets array to correct size
+	cout << "array1 ";
+	for(int i = 0; i < array1.size(); ++i)
+		cout << array1[i] << " ";
+	cout << endl;
+
+	// write array
+	for(int i = 0; i < array1.size(); ++i)
+		array1[i] = i;
+	pd.writeArray("array1", array1);
+
+	// ready array
+	pd.readArray("array1", array1);
+	cout << "array1 ";
+	for(int i = 0; i < array1.size(); ++i)
+		cout << array1[i] << " ";
+	cout << endl;
+
+	// clear array
+	pd.clearArray("array1", 10);
+
+	// ready array
+	pd.readArray("array1", array1);
+	cout << "array1 ";
+	for(int i = 0; i < array1.size(); ++i)
+		cout << array1[i] << " ";
+	cout << endl;
+
+	cout << "FINISH Array Test" << endl;
+
+	// -----------------------------------------------------
+	cout << endl << "BEGIN PD Test" << endl;
+
+	pd.sendSymbol("fromOF", "test");
+
+	cout << "FINISH PD Test" << endl;
+
+	// -----------------------------------------------------
+	cout << endl << "BEGIN Instance Test" << endl;
+
+	// open 10 instances
+	for(int i = 0; i < 10; ++i) {
+		Patch p = pd.openPatch("pd/instance.pd");
+		instances.push_back(p);
+	}
+
+	// send a hello bang to each instance individually using the dollarZero
+	// to [r $0-instance] which should print the instance dollarZero unique id
+	// and a unique random number
+	for(int i = 0; i < instances.size(); ++i) {
+		pd.sendBang(instances[i].dollarZeroStr()+"-instance");
+	}
+
+	// send a random float between 0 and 100
+	for(int i = 0; i < instances.size(); ++i) {
+		pd.sendFloat(instances[i].dollarZeroStr()+"-instance", int(ofRandom(0, 100)));
+	}
+
+	// send a symbol
+	for(int i = 0; i < instances.size(); ++i) {
+		pd.sendSymbol(instances[i].dollarZeroStr()+"-instance", "howdy dude");
+	}
+
+	// close all instances
+	for(int i = 0; i < instances.size(); ++i) {
+		pd.closePatch(instances[i]);
+	}
+	instances.clear();
+
+	cout << "FINISH Instance Test" << endl;
+
+	// -----------------------------------------------------
+	// play a tone by sending a list
+	// [list tone pitch 72 (
+	pd.startMessage();
+	pd.addSymbol("pitch");
+	pd.addFloat(72);
+	pd.finishList("tone");
+	pd.sendBang("tone");
 
 }
 
@@ -121,12 +287,22 @@ void ofApp::update() {
 		pd.receiveMidi();
 	}
 
+	// update scope array from pd
+	pd.readArray("scope", scopeArray);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
 
-	
+	// draw scope
+	ofSetColor(0, 255, 0);
+	ofSetRectMode(OF_RECTMODE_CENTER);
+	float x = 0, y = ofGetHeight()/2;
+	float w = ofGetWidth() / (float) scopeArray.size(), h = ofGetHeight()/2;
+	for(int i = 0; i < scopeArray.size()-1; ++i) {
+		ofDrawLine(x, y+scopeArray[i]*h, x+w, y+scopeArray[i+1]*h);
+		x += w;
+	}
 }
 
 //--------------------------------------------------------------
